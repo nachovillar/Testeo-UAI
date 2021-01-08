@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.2",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "puppeteer": "^1.17.0",
+    "rimraf": "^2.6.3"
+  },
+  "dependencies": {
+    "node-cron": "^2.0.3",
+    "node-fetch": "^2.6.1",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
