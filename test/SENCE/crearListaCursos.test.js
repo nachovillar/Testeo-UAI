@@ -22,7 +22,7 @@ describe("Extraer Json de cursos", () => {
     test("añadiendo cursos a lista",
         async() => {
             
-            await page.goto(urlUAIO)
+            await page.goto(url)
             
             .then(() => page.waitForSelector('[id="id_username"]'))
             .then(() => page.type('[id="id_username"]', 'joseignacio.villarg@gmail.com'))
@@ -30,7 +30,7 @@ describe("Extraer Json de cursos", () => {
             .then(() => page.waitForSelector('[id="id_password"]'))
             .then(() => page.type('[id="id_password"]', 'Uncharted1'))
             .then(() => page.click('[id="id_submit"]'))
-            .then(() => page.goto('https://onlinedev.uai.cl/admin/tasklogs.php?logid=7556807'))
+            .then(() => page.goto('https://onlinedev.uai.cl/admin/tasklogs.php?logid=10541200'))
         
             .then(() => page.screenshot({path: 'imagenes/SENCE/Step0.png'}))
             
@@ -47,12 +47,12 @@ describe("Extraer Json de cursos", () => {
             
             var filesystem = require('fs')
             
-            filesystem.writeFile('SENCE/Jsons/listaCursos.txt', listaCursos, function(err){
+            filesystem.writeFile('SENCE/Folios/listaCursos.txt', listaCursos, function(err){
                 if(err){
                     console.log("Pencil")
                 }
             })
             
             
-    })
+    }, 70000)
 })

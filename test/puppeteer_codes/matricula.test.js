@@ -140,7 +140,7 @@ describe( 'Test Matricula' , () => {
                 
                 // Se espera que dentro de la page se encuentre el mensaje "creado exitosamente"
                 const text = await page.evaluate(() => document.body.innerHTML)
-                expect(text).toContain('creado exitosamente')
+                expect(text).toContain('Log insertado exitosamente')
             }
         )
     })
